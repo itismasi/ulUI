@@ -1,0 +1,29 @@
+.shadow-soft-black {filter: drop-shadow(.25rem .25rem .25rem silver);}
+
+// Shapes
+
+hr {border: none;}
+hr::before {
+	content: "";
+	display: block;
+	width: 100%;
+}
+
+hr.circle::before {
+	content: "⬤ ⬤ ⬤";
+
+	font-size: 2rem;
+	line-height: 2rem;
+	text-align: center;
+	letter-spacing: .5rem;
+	color: $grey_900;
+}
+
+hr.line {
+	height: .5rem;
+	width: 80%;
+	margin: 0 auto;
+
+	background: $grey_900;
+	border-radius: 1rem;
+}

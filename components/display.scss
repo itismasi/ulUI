@@ -1,0 +1,141 @@
+// ---> Normals
+.normal-center {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.normal-padding-zero {padding: 0;}
+.normal-margin-zero {margin: 0;}
+.normal-no-space {
+	@extend .normal-padding-zero;
+	@extend .normal-margin-zero;
+}
+
+.normal-padding-horizontal-light {
+	padding-top: .5rem;
+	padding-bottom: .5rem;
+}.normal-padding-horizontal-medium {
+	padding-top: 1.75rem;
+	padding-bottom: 1.75rem;
+}.normal-padding-horizontal-heavy {
+	padding-top: 4rem;
+	padding-bottom: 4rem;
+}
+
+.normal-padding-vertical-light {
+	padding-left: .5rem;
+	padding-right: .5rem;
+}.normal-padding-vertical-medium {
+	padding-left: 1.75rem;
+	padding-right: 1.75rem;
+}.normal-padding-vertical-heavy {
+	padding-left: 4rem;
+	padding-right: 4rem;
+}
+
+.normal-padding-all-light {
+	@extend .normal-padding-horizontal-light;
+	@extend .normal-padding-vertical-light;
+}.normal-padding-all-medium {
+	@extend .normal-padding-horizontal-medium;
+	@extend .normal-padding-vertical-medium;
+}.normal-padding-all-heavy {
+	@extend .normal-padding-horizontal-heavy;
+	@extend .normal-padding-vertical-heavy;
+}
+
+
+
+.normal-margin-horizontal-light {
+	margin-top: .5rem;
+	margin-bottom: .5rem;
+}.normal-margin-horizontal-medium {
+	margin-top: 1.75rem;
+	margin-bottom: 1.75rem;
+}.normal-margin-horizontal-heavy {
+	margin-top: 4rem;
+	margin-bottom: 4rem;
+}
+
+.normal-margin-vertical-light {
+	margin-left: .5rem;
+	margin-right: .5rem;
+}.normal-margin-vertical-medium {
+	margin-left: 1.75rem;
+	margin-right: 1.75rem;
+}.normal-margin-vertical-heavy {
+	margin-left: 4rem;
+	margin-right: 4rem;
+}
+
+.normal-margin-all-light {
+	@extend .normal-margin-horizontal-light;
+	@extend .normal-margin-vertical-light;
+}.normal-margin-all-medium {
+	@extend .normal-margin-horizontal-medium;
+	@extend .normal-margin-vertical-medium;
+}.normal-margin-all-heavy {
+	@extend .normal-margin-horizontal-heavy;
+	@extend .normal-margin-vertical-heavy;
+}
+
+// ---> Borders
+.border-radius-light {border-radius: .25rem;}
+.border-radius-medium {border-radius: .5rem;}
+.border-radius-heavy {border-radius: 1rem;}
+
+// ---> children
+.children-inline {
+	* {display: inline;}
+}
+
+// ---> Flexes
+.flex {display: flex;}
+.flex-row {
+	@extend .flex;
+	flex-direction: row;
+}
+.flex-row-wrap {
+	@extend .flex-row;
+	flex-wrap: wrap;
+}
+.flex-column {
+	@extend .flex;
+	flex-direction: column;
+}
+.flex-align-center {align-items: center;}
+.flex-justify-center {justify-content: center;}
+.flex-both-center {
+	@extend .flex-align-center;
+	@extend .flex-justify-center;
+}
+
+// => Block sizing
+.full-width {width: 100%;}
+.full-height {height: 100%;}
+.full-page {
+	width: 100%;
+	height: 100vh;
+}
+.min-full-page {
+	width: 100%;
+	min-height: 100vh;
+}
+
+
+// ---> Overflows
+.overflow-vertical {overflow-x: auto;}
+.overflow-horizontal {overflow-y: auto;}
+
+.overflow-vertical-only {
+	@extend .overflow-vertical;
+	overflow-y: hidden;
+}
+.overflow-horizontal-only {
+	@extend .overflow-horizontal;
+	overflow-x: hidden;
+}
+.overflow-none {
+	overflow-x: hidden;
+	overflow-y: hidden;
+}

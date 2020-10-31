@@ -1,0 +1,99 @@
+body {
+	color: $grey_900;
+}
+
+body.vazir-default {* {font-family: fr_vazir;}}
+
+.text-white {color: $grey_50;}
+.text-green {color: $green_700;}
+.text-red {color: $red_700;}
+.text-yellow {color: $yellow_700;}
+.text-pink {color: $pink_700;}
+.text-amber {color: $amber_700;}
+.text-blue {color: $blue_700;}
+.text-purple {color: $purple_700;}
+.text-brown {color: $brown_700;}
+.text-bgrey {color: $bgrey_700;}
+.text-purple {color: $purple_700;}
+.text-teal {color: $teal_700;}
+.text-cyan {color: $cyan_700;}
+.text-orange {color: $orange_700;}
+
+.text-size-normal {font-size: 1rem;}
+.text-size-light {font-size: .8rem;}
+.text-size-medium {font-size: 1.3rem;}
+.text-size-big {font-size: 2rem;}
+
+.text-center {text-align: center;}
+.text-justify {text-align: justify;}
+.text-justify-center {
+	@extend .text-justify;
+	text-align-last: center;
+}
+
+.text-nowrap {white-space: nowrap;}
+
+.text-thin {font-weight: 100;}
+.text-light {font-weight: 300;}
+.text-regular {font-weight: 400;}
+.text-medium {font-weight: 500;}
+.text-bold {font-weight: 700;}
+.text-dark {font-weight: 900;}
+
+.hgroup {
+	* {padding-top: .5rem;}
+	h1 {
+		line-height: 3rem;
+		font-size: 3rem;
+		font-weight: 900;
+	}h2 {
+		line-height: 2rem;
+		font-size: 2rem;
+		font-weight: 700;
+	}
+	p {
+		font-weight: bold;
+	}
+}
+
+.fgroup {
+	h3 {
+		line-height: 1.1rem;
+		font-size: 1.1rem;
+		font-weight: 900;
+
+		padding-top: .5rem;
+	}p {
+		font-weight: lighter;
+		
+		padding-bottom: .5rem;
+	}
+}
+
+.pgroup {
+	* {padding-bottom: 1rem;}
+	h3 {
+		line-height: 1.75rem;
+		font-size: 1.75rem;
+		font-weight: 900;
+	}h4 {
+		line-height: 1.3rem;
+		font-size: 1.3rem;
+	}
+	p {
+		line-height: 1.3rem;
+	}
+}
+
+.quote {
+	@extend .text-justify-center;
+	@extend .normal-padding-horizontal-heavy;
+	@extend .normal-padding-vertical-medium;
+
+	font-size: 1.3rem;
+	font-weight: lighter;
+	font-style: italic;
+}.quote::before, .quote::after {
+	content: "»";
+	padding: .5rem;
+}.quote::before {content: "«";}

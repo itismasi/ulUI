@@ -1,0 +1,50 @@
+.form {
+	input, button {
+		width: 100%;
+		display: block;
+		box-sizing: border-box;
+
+		border-radius: 1rem;
+
+
+		font-size: 1.2rem;
+		font-weight: bold;
+		font-family: fr_vazir;
+		text-align: center;
+		line-height: 1rem;
+	}
+
+	input {
+		background: $grey_50;
+		border: 1px solid $grey_200;
+
+		color: $grey_900;
+
+		margin-bottom: 1rem;
+		padding: .5rem;
+
+		filter: drop-shadow(.25rem .25rem .5rem $grey_100);
+	}
+
+	input[valid=true] {
+		background: $green_100;
+		border-color: $green_700;
+		filter: drop-shadow(.25rem .25rem .5rem $green_500);
+	}input[valid=false] {
+		background: $red_100;
+		border-color: $red_700;
+		filter: drop-shadow(.25rem .25rem .5rem $red_500);
+	}
+
+	button {
+		border: none;
+		background: $grey_900;
+
+		padding: 1rem;
+
+		color: $grey_50;
+
+		filter: drop-shadow(.25rem .25rem .5rem $grey_900);
+
+	}
+}

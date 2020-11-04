@@ -4,41 +4,43 @@ body {
 
 body.vazir-default {* {font-family: fr_vazir;}}
 
-.text-white {color: $grey_50;}
-.text-green {color: $green_700;}
-.text-red {color: $red_700;}
-.text-yellow {color: $yellow_700;}
-.text-pink {color: $pink_700;}
-.text-amber {color: $amber_700;}
-.text-blue {color: $blue_700;}
-.text-purple {color: $purple_700;}
-.text-brown {color: $brown_700;}
-.text-bgrey {color: $bgrey_700;}
-.text-purple {color: $purple_700;}
-.text-teal {color: $teal_700;}
-.text-cyan {color: $cyan_700;}
-.text-orange {color: $orange_700;}
+.text-color-white {color: $grey_50;}
+.text-color-green {color: $green_700;}
+.text-color-red {color: $red_700;}
+.text-color-yellow {color: $yellow_700;}
+.text-color-pink {color: $pink_700;}
+.text-color-amber {color: $amber_700;}
+.text-color-blue {color: $blue_700;}
+.text-color-purple {color: $purple_700;}
+.text-color-brown {color: $brown_700;}
+.text-color-bgrey {color: $bgrey_700;}
+.text-color-purple {color: $purple_700;}
+.text-color-teal {color: $teal_700;}
+.text-color-cyan {color: $cyan_700;}
+.text-color-orange {color: $orange_700;}
 
 .text-size-normal {font-size: 1rem;}
 .text-size-light {font-size: .8rem;}
 .text-size-medium {font-size: 1.3rem;}
 .text-size-big {font-size: 2rem;}
 
-.text-center {text-align: center;}
-.text-justify {text-align: justify;}
-.text-justify-center {
-	@extend .text-justify;
+.text-align-center {text-align: center;}
+.text-align-justify {text-align: justify;}
+.text-align-justify-center {
+	@extend .text-align-justify;
 	text-align-last: center;
 }
 
 .text-nowrap {white-space: nowrap;}
 
-.text-thin {font-weight: 100;}
-.text-light {font-weight: 300;}
-.text-regular {font-weight: 400;}
-.text-medium {font-weight: 500;}
-.text-bold {font-weight: 700;}
-.text-dark {font-weight: 900;}
+.text-weight-thin {font-weight: 100;}
+.text-weight-light {font-weight: 300;}
+.text-weight-regular {font-weight: 400;}
+.text-weight-medium {font-weight: 500;}
+.text-weight-bold {font-weight: 700;}
+.text-weight-dark {font-weight: 900;}
+
+.text-decoration-underline {text-decoration: underline;}
 
 .hgroup {
 	* {padding-top: .5rem;}

@@ -4,73 +4,73 @@ $passToFont: "http://localhost/ului";
 
 @font-face {
     font-family: 'frh_vazir';
-    src: url('{$passToFont}/font/vazir/hinted/thin.eot');
+    src: url($passToFont + '/font/vazir/hinted/thin.eot');
     src: local('Vazir Thin'), local('Vazir-Thin'),
-        url('$passToFont/font/vazir/hinted/thin.eot?#iefix') format('embedded-opentype'),
-        url('{$passToFont}/font/vazir/hinted/thin.woff2') format('woff2'),
-        url('{$passToFont}/font/vazir/hinted/thin.woff') format('woff'),
-        url('{$passToFont}/font/vazir/hinted/thin.ttf') format('truetype'),
-        url('{$passToFont}/font/vazir/hinted/thin.svg#Vazir-Medium') format('svg');
+        url($passToFont + '/font/vazir/hinted/thin.eot?#iefix') format('embedded-opentype'),
+        url($passToFont + '/font/vazir/hinted/thin.woff2') format('woff2'),
+        url($passToFont + '/font/vazir/hinted/thin.woff') format('woff'),
+        url($passToFont + '/font/vazir/hinted/thin.ttf') format('truetype'),
+        url($passToFont + '/font/vazir/hinted/thin.svg#Vazir-Medium') format('svg');
     font-weight: 100;
     font-style: normal;
 }
 @font-face {
     font-family: 'frh_vazir';
-    src: url('{$passToFont}/font/vazir/hinted/light.eot');
+    src: url($passToFont + '/font/vazir/hinted/light.eot');
     src: local('Vazir Light'), local('Vazir-Light'),
-        url('{$passToFont}/font/vazir/hinted/light.eot?#iefix') format('embedded-opentype'),
-        url('{$passToFont}/font/vazir/hinted/light.woff2') format('woff2'),
-        url('{$passToFont}/font/vazir/hinted/light.woff') format('woff'),
-        url('{$passToFont}/font/vazir/hinted/light.ttf') format('truetype'),
-        url('{$passToFont}/font/vazir/hinted/light.svg#Vazir-Light') format('svg');
+        url($passToFont + '/font/vazir/hinted/light.eot?#iefix') format('embedded-opentype'),
+        url($passToFont + '/font/vazir/hinted/light.woff2') format('woff2'),
+        url($passToFont + '/font/vazir/hinted/light.woff') format('woff'),
+        url($passToFont + '/font/vazir/hinted/light.ttf') format('truetype'),
+        url($passToFont + '/font/vazir/hinted/light.svg#Vazir-Light') format('svg');
     font-weight: 300;
     font-style: normal;
 }
 @font-face {
     font-family: 'frh_vazir';
-    src: url('{$passToFont}/font/vazir/hinted/regular.eot');
+    src: url($passToFont + '/font/vazir/hinted/regular.eot');
     src: local('Vazir'),
-        url('{$passToFont}/font/vazir/hinted/regular.eot?#iefix') format('embedded-opentype'),
-        url('{$passToFont}/font/vazir/hinted/regular.woff2') format('woff2'),
-        url('{$passToFont}/font/vazir/hinted/regular.woff') format('woff'),
-        url('{$passToFont}/font/vazir/hinted/regular.ttf') format('truetype'),
-        url('{$passToFont}/font/vazir/hinted/regular.svg#Vazir') format('svg');
+        url($passToFont + '/font/vazir/hinted/regular.eot?#iefix') format('embedded-opentype'),
+        url($passToFont + '/font/vazir/hinted/regular.woff2') format('woff2'),
+        url($passToFont + '/font/vazir/hinted/regular.woff') format('woff'),
+        url($passToFont + '/font/vazir/hinted/regular.ttf') format('truetype'),
+        url($passToFont + '/font/vazir/hinted/regular.svg#Vazir') format('svg');
     font-weight: 400;
     font-style: normal;
 }
 @font-face {
     font-family: 'frh_vazir';
-    src: url('{$passToFont}/font/vazir/hinted/medium.eot');
+    src: url($passToFont + '/font/vazir/hinted/medium.eot');
     src: local('Vazir Medium'), local('Vazir-Medium'),
-        url('{$passToFont}/font/vazir/hinted/medium.eot?#iefix') format('embedded-opentype'),
-        url('{$passToFont}/font/vazir/hinted/medium.woff2') format('woff2'),
-        url('{$passToFont}/font/vazir/hinted/medium.woff') format('woff'),
-        url('{$passToFont}/font/vazir/hinted/medium.ttf') format('truetype'),
-        url('{$passToFont}/font/vazir/hinted/medium.svg#Vazir-Medium') format('svg');
+        url($passToFont + '/font/vazir/hinted/medium.eot?#iefix') format('embedded-opentype'),
+        url($passToFont + '/font/vazir/hinted/medium.woff2') format('woff2'),
+        url($passToFont + '/font/vazir/hinted/medium.woff') format('woff'),
+        url($passToFont + '/font/vazir/hinted/medium.ttf') format('truetype'),
+        url($passToFont + '/font/vazir/hinted/medium.svg#Vazir-Medium') format('svg');
     font-weight: 500;
     font-style: normal;
 }
 @font-face {
     font-family: 'frh_vazir';
-    src: url('{$passToFont}/font/vazir/hinted/bold.eot');
+    src: url($passToFont + '/font/vazir/hinted/bold.eot');
     src: local('Vazir Bold'), local('Vazir-Bold'),
-        url('{$passToFont}/font/vazir/hinted/bold.eot?#iefix') format('embedded-opentype'),
-        url('{$passToFont}/font/vazir/hinted/bold.woff2') format('woff2'),
-        url('{$passToFont}/font/vazir/hinted/bold.woff') format('woff'),
-        url('{$passToFont}/font/vazir/hinted/bold.ttf') format('truetype'),
-        url('{$passToFont}/font/vazir/hinted/bold.svg#Vazir-Bold') format('svg');
+        url($passToFont + '/font/vazir/hinted/bold.eot?#iefix') format('embedded-opentype'),
+        url($passToFont + '/font/vazir/hinted/bold.woff2') format('woff2'),
+        url($passToFont + '/font/vazir/hinted/bold.woff') format('woff'),
+        url($passToFont + '/font/vazir/hinted/bold.ttf') format('truetype'),
+        url($passToFont + '/font/vazir/hinted/bold.svg#Vazir-Bold') format('svg');
     font-weight: 700;
     font-style: normal;
 }
 @font-face {
     font-family: 'frh_vazir';
-    src: url('{$passToFont}/font/vazir/hinted/black.eot');
+    src: url($passToFont + '/font/vazir/hinted/black.eot');
     src: local('Vazir Black'), local('Vazir-Black'),
-        url('{$passToFont}/font/vazir/hinted/black.eot?#iefix') format('embedded-opentype'),
-        url('{$passToFont}/font/vazir/hinted/black.woff2') format('woff2'),
-        url('{$passToFont}/font/vazir/hinted/black.woff') format('woff'),
-        url('{$passToFont}/font/vazir/hinted/black.ttf') format('truetype'),
-        url('{$passToFont}/font/vazir/hinted/black.svg#Vazir-Black') format('svg');
+        url($passToFont + '/font/vazir/hinted/black.eot?#iefix') format('embedded-opentype'),
+        url($passToFont + '/font/vazir/hinted/black.woff2') format('woff2'),
+        url($passToFont + '/font/vazir/hinted/black.woff') format('woff'),
+        url($passToFont + '/font/vazir/hinted/black.ttf') format('truetype'),
+        url($passToFont + '/font/vazir/hinted/black.svg#Vazir-Black') format('svg');
     font-weight: 900;
     font-style: normal;
 }
@@ -79,73 +79,73 @@ $passToFont: "http://localhost/ului";
 // Normal
 @font-face {
     font-family: 'fr_vazir';
-    src: url('{$passToFont}/font/vazir/normal/thin.eot');
+    src: url($passToFont + '/font/vazir/normal/thin.eot');
     src: local('Vazir Thin'), local('Vazir-Thin'),
-        url('{$passToFont}/font/vazir/normal/thin.eot?#iefix') format('embedded-opentype'),
-        url('{$passToFont}/font/vazir/normal/thin.woff2') format('woff2'),
-        url('{$passToFont}/font/vazir/normal/thin.woff') format('woff'),
-        url('{$passToFont}/font/vazir/normal/thin.ttf') format('truetype'),
-        url('{$passToFont}/font/vazir/normal/thin.svg#Vazir-Medium') format('svg');
+        url($passToFont + '/font/vazir/normal/thin.eot?#iefix') format('embedded-opentype'),
+        url($passToFont + '/font/vazir/normal/thin.woff2') format('woff2'),
+        url($passToFont + '/font/vazir/normal/thin.woff') format('woff'),
+        url($passToFont + '/font/vazir/normal/thin.ttf') format('truetype'),
+        url($passToFont + '/font/vazir/normal/thin.svg#Vazir-Medium') format('svg');
     font-weight: 100;
     font-style: normal;
 }
 @font-face {
     font-family: 'fr_vazir';
-    src: url('{$passToFont}/font/vazir/normal/light.eot');
+    src: url($passToFont + '/font/vazir/normal/light.eot');
     src: local('Vazir Light'), local('Vazir-Light'),
-        url('{$passToFont}/font/vazir/normal/light.eot?#iefix') format('embedded-opentype'),
-        url('{$passToFont}/font/vazir/normal/light.woff2') format('woff2'),
-        url('{$passToFont}/font/vazir/normal/light.woff') format('woff'),
-        url('{$passToFont}/font/vazir/normal/light.ttf') format('truetype'),
-        url('{$passToFont}/font/vazir/normal/light.svg#Vazir-light') format('svg');
+        url($passToFont + '/font/vazir/normal/light.eot?#iefix') format('embedded-opentype'),
+        url($passToFont + '/font/vazir/normal/light.woff2') format('woff2'),
+        url($passToFont + '/font/vazir/normal/light.woff') format('woff'),
+        url($passToFont + '/font/vazir/normal/light.ttf') format('truetype'),
+        url($passToFont + '/font/vazir/normal/light.svg#Vazir-light') format('svg');
     font-weight: 300;
     font-style: normal;
 }
 @font-face {
     font-family: 'fr_vazir';
-    src: url('{$passToFont}/font/vazir/normal/regular.eot');
+    src: url($passToFont + '/font/vazir/normal/regular.eot');
     src: local('Vazir'),
-        url('{$passToFont}/font/vazir/normal/regular.eot?#iefix') format('embedded-opentype'),
-        url('{$passToFont}/font/vazir/normal/regular.woff2') format('woff2'),
-        url('{$passToFont}/font/vazir/normal/regular.woff') format('woff'),
-        url('{$passToFont}/font/vazir/normal/regular.ttf') format('truetype'),
-        url('{$passToFont}/font/vazir/normal/regular.svg#Vazir') format('svg');
+        url($passToFont + '/font/vazir/normal/regular.eot?#iefix') format('embedded-opentype'),
+        url($passToFont + '/font/vazir/normal/regular.woff2') format('woff2'),
+        url($passToFont + '/font/vazir/normal/regular.woff') format('woff'),
+        url($passToFont + '/font/vazir/normal/regular.ttf') format('truetype'),
+        url($passToFont + '/font/vazir/normal/regular.svg#Vazir') format('svg');
     font-weight: 400;
     font-style: normal;
 }
 @font-face {
     font-family: 'fr_vazir';
-    src: url('{$passToFont}/font/vazir/normal/medium.eot');
+    src: url($passToFont + '/font/vazir/normal/medium.eot');
     src: local('Vazir Medium'), local('Vazir-Medium'),
-        url('{$passToFont}/font/vazir/normal/medium.eot?#iefix') format('embedded-opentype'),
-        url('{$passToFont}/font/vazir/normal/medium.woff2') format('woff2'),
-        url('{$passToFont}/font/vazir/normal/medium.woff') format('woff'),
-        url('{$passToFont}/font/vazir/normal/medium.ttf') format('truetype'),
-        url('{$passToFont}/font/vazir/normal/medium.svg#Vazir-Medium') format('svg');
+        url($passToFont + '/font/vazir/normal/medium.eot?#iefix') format('embedded-opentype'),
+        url($passToFont + '/font/vazir/normal/medium.woff2') format('woff2'),
+        url($passToFont + '/font/vazir/normal/medium.woff') format('woff'),
+        url($passToFont + '/font/vazir/normal/medium.ttf') format('truetype'),
+        url($passToFont + '/font/vazir/normal/medium.svg#Vazir-Medium') format('svg');
     font-weight: 500;
     font-style: normal;
 }
 @font-face {
     font-family: 'fr_vazir';
-    src: url('{$passToFont}/font/vazir/normal/bold.eot');
+    src: url($passToFont + '/font/vazir/normal/bold.eot');
     src: local('Vazir Bold'), local('Vazir-Bold'),
-        url('{$passToFont}/font/vazir/normal/bold.eot?#iefix') format('embedded-opentype'),
-        url('{$passToFont}/font/vazir/normal/bold.woff2') format('woff2'),
-        url('{$passToFont}/font/vazir/normal/bold.woff') format('woff'),
-        url('{$passToFont}/font/vazir/normal/bold.ttf') format('truetype'),
-        url('{$passToFont}/font/vazir/normal/bold.svg#Vazir-Bold') format('svg');
+        url($passToFont + '/font/vazir/normal/bold.eot?#iefix') format('embedded-opentype'),
+        url($passToFont + '/font/vazir/normal/bold.woff2') format('woff2'),
+        url($passToFont + '/font/vazir/normal/bold.woff') format('woff'),
+        url($passToFont + '/font/vazir/normal/bold.ttf') format('truetype'),
+        url($passToFont + '/font/vazir/normal/bold.svg#Vazir-Bold') format('svg');
     font-weight: 700;
     font-style: normal;
 }
 @font-face {
     font-family: 'fr_vazir';
-    src: url('{$passToFont}/font/vazir/normal/black.eot');
+    src: url($passToFont + '/font/vazir/normal/black.eot');
     src: local('Vazir Black'), local('Vazir-Black'),
-        url('{$passToFont}/font/vazir/normal/black.eot?#iefix') format('embedded-opentype'),
-        url('{$passToFont}/font/vazir/normal/black.woff2') format('woff2'),
-        url('{$passToFont}/font/vazir/normal/black.woff') format('woff'),
-        url('{$passToFont}/font/vazir/normal/black.ttf') format('truetype'),
-        url('{$passToFont}/font/vazir/normal/black.svg#Vazir-Black') format('svg');
+        url($passToFont + '/font/vazir/normal/black.eot?#iefix') format('embedded-opentype'),
+        url($passToFont + '/font/vazir/normal/black.woff2') format('woff2'),
+        url($passToFont + '/font/vazir/normal/black.woff') format('woff'),
+        url($passToFont + '/font/vazir/normal/black.ttf') format('truetype'),
+        url($passToFont + '/font/vazir/normal/black.svg#Vazir-Black') format('svg');
     font-weight: 900;
     font-style: normal;
 }

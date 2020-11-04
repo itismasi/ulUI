@@ -285,29 +285,50 @@ $bgrey_900 : #263238;
 	}
 }
 
-.gradient-animation {
-	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+.background-gradient-static {
+	background-image: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
 	background-size: 400% 400% !important;
+}
+
+.background-gradient-animation {
+	@extend .background-gradient-static;
 	animation: gradient 15s ease infinite;
 }
-.gradient-animation-blue {
-	@extend .gradient-animation;
+.background-gradient-animation-blue {
+	@extend .background-gradient-animation;
 	background-image: linear-gradient(-45deg, $blue_500, $lblue_400, $cyan_700, $lblue_800) !important;
 }
-.gradient-animation-red {
-	@extend .gradient-animation;
+.background-gradient-animation-red {
+	@extend .background-gradient-animation;
 	background-image: linear-gradient(-45deg, $red_500, $pink_400, $red_600, $pink_800) !important;
 }
-.gradient-animation-yellow {
-	@extend .gradient-animation;
+.background-gradient-animation-yellow {
+	@extend .background-gradient-animation;
 	background-image: linear-gradient(-45deg, $amber_400, $yellow_700, $dorange_500, $yellow_800) !important;
 }
-.gradient-animation-green {
-	@extend .gradient-animation;
+.background-gradient-animation-green {
+	@extend .background-gradient-animation;
 	background-image: linear-gradient(-45deg, $teal_400, $teal_700, $green_700, $teal_500) !important;
 }
-.gradient-animation-purple {
-	@extend .gradient-animation;
+.background-gradient-animation-purple {
+	@extend .background-gradient-animation;
 	background-image: linear-gradient(-45deg, $purple_700, $dpurple_900, $purple_900, $dpurple_500) !important;
 }
-.gradient-static-blue {background: linear-gradient(135deg, $blue_800, $lblue_500) center /cover no-repeat;}
+.background-gradient-static-blue {background: linear-gradient(135deg, $blue_800, $lblue_500) center /cover no-repeat;}
+
+
+
+.background-color-white {background-color: $grey_50;}
+.background-color-green {background-color: $green_700;}
+.background-color-red {background-color: $red_700;}
+.background-color-yellow {background-color: $yellow_700;}
+.background-color-pink {background-color: $pink_700;}
+.background-color-amber {background-color: $amber_700;}
+.background-color-blue {background-color: $blue_700;}
+.background-color-purple {background-color: $purple_700;}
+.background-color-brown {background-color: $brown_700;}
+.background-color-bgrey {background-color: $bgrey_700;}
+.background-color-purple {background-color: $purple_700;}
+.background-color-teal {background-color: $teal_700;}
+.background-color-cyan {background-color: $cyan_700;}
+.background-color-orange {background-color: $orange_700;}

@@ -1,4 +1,32 @@
-.shadow-soft-black {filter: drop-shadow(.25rem .25rem .25rem silver);}
+.shadow-soft-black {filter: drop-shadow(.25rem .25rem .25rem $grey_500);}
+
+
+// ---> Borders
+.border-radius-light {border-radius: .25rem;}
+.border-radius-medium {border-radius: .5rem;}
+.border-radius-heavy {border-radius: 1rem;}
+
+.border-solid {border-style: solid;}
+.border-size-light {border-width: 1px;}
+.border-size-medium {border-width: 2.5px;}
+.border-size-heavy {border-width: 5px;}
+
+.border-color-white {color: $grey_50;}
+.border-color-green {color: $green_700;}
+.border-color-red {color: $red_700;}
+.border-color-yellow {color: $yellow_700;}
+.border-color-pink {color: $pink_700;}
+.border-color-amber {color: $amber_700;}
+.border-color-blue {color: $blue_700;}
+.border-color-purple {color: $purple_700;}
+.border-color-brown {color: $brown_700;}
+.border-color-bgrey {color: $bgrey_700;}
+.border-color-purple {color: $purple_700;}
+.border-color-teal {color: $teal_700;}
+.border-color-cyan {color: $cyan_700;}
+.border-color-orange {color: $orange_700;}
+
+.border-none {border: none;}
 
 // Shapes
 
@@ -26,4 +54,13 @@ hr.line {
 
 	background: $grey_900;
 	border-radius: 1rem;
+}
+
+.tile {
+	width: calc(100% - #{$light-size} * 2);
+	@extend .normal-padding-all-light;
+	@extend .normal-margin-all-light;
+
+	@extend .border-radius-light;
+	@extend .shadow-soft-black;
 }

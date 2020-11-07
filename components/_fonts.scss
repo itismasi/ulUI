@@ -323,3 +323,18 @@ $passToFont: "http://localhost/ului";
     font-style: normal;
     unicode-range: U+0020-007E;
 }
+
+// Material Font
+
+@font-face {
+    font-family: 'Material Icons';
+    src: url($passToFont + '/font/material/normal/black.eot');
+    src: local('Roboto Black'), local('Roboto-Black'),
+        url($passToFont + '/font/material/normal/black.eot?#iefix') format('embedded-opentype'),
+        url($passToFont + '/font/material/normal/black.woff2') format('woff2'),
+        url($passToFont + '/font/material/normal/black.woff') format('woff'),
+        url($passToFont + '/font/material/normal/black.ttf') format('truetype'),
+        url($passToFont + '/font/material/normal/black.svg#Roboto-Black') format('svg');
+    font-style: normal;
+    font-weight: 400;
+}

@@ -2,7 +2,8 @@ body {
 	color: $grey_900;
 }
 
-body.vazir-default {* {font-family: fr_vazir;}}
+// body.vazir-default {* {font-family: fr_vazir;}}
+body {* {font-family: uloo;}}
 
 .text-color-white {color: $grey_50;}
 .text-color-green {color: $green_700;}

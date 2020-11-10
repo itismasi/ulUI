@@ -30,4 +30,6 @@ body {
 	li {
 		list-style: none;
 	}
+
+	[class^="mdl"] {font-family: inherit;}
 }

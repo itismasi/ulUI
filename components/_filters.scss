@@ -1,3 +1,9 @@
 .shadow-soft-black {filter: drop-shadow(.25rem .25rem .25rem $grey_500);}
 
 .filter-invert {filter: invert(1)}
+
+.transition {transition-property: all;}
+.transition-short {
+	@extend .transition;
+	transition-duration: .5s;
+}

@@ -3,6 +3,10 @@
 .border-radius-medium {border-radius: .5rem;}
 .border-radius-heavy {border-radius: 1rem;}
 
+.border-radius-avatar {
+	border-radius: 100%;
+}
+
 .border-solid {border-style: solid;}
 .border-size-light {border-width: 1px;}
 .border-size-medium {border-width: 2.5px;}
@@ -64,20 +68,16 @@ hr.line {
 
 .tile-parent {background-color: #fce4ec;}
 
-
-  
 .material-icons {
-    font-family: 'Material Icons';
-    font-weight: normal;
-    font-style: normal;
-    font-size: 24px;
-    line-height: 1;
-    letter-spacing: normal;
-    text-transform: none;
-    display: inline-block;
-    white-space: nowrap;
-    word-wrap: normal;
-    direction: ltr;
-    -webkit-font-feature-settings: 'liga';
-    -webkit-font-smoothing: antialiased;
+	font-family: 'Material Icons' !important;
+	font-weight: normal;
+	font-style: normal;
+	letter-spacing: normal;
+	text-transform: none;
+	display: inline-block;
+	word-wrap: normal;
+	-moz-font-feature-settings: 'liga';
+		 font-feature-settings: 'liga';
+	-webkit-font-feature-settings: 'liga';
+	-webkit-font-smoothing: antialiased;
 }

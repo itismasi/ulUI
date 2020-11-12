@@ -21,12 +21,14 @@ body {* {font-family: uloo;}}
 .text-color-cyan {color: $cyan_700;}
 .text-color-orange {color: $orange_700;}
 
-.text-size-normal {font-size: 1rem;}
 .text-size-light {font-size: .8rem;}
+.text-size-normal {font-size: 1rem;}
 .text-size-medium {font-size: 1.3rem;}
 .text-size-big {font-size: 2rem;}
 
 .text-align-center {text-align: center;}
+.text-align-right {text-align: right;}
+.text-align-left {text-align: left;}
 .text-align-justify {text-align: justify;}
 .text-align-justify-center {
 	@extend .text-align-justify;
@@ -43,6 +45,16 @@ body {* {font-family: uloo;}}
 .text-weight-dark {font-weight: 900;}
 
 .text-decoration-underline {text-decoration: underline;}
+
+.text-force-parent {
+	* {
+		color: inherit !important;
+		font-family: uloo !important;
+	}
+	.material-icons {
+		font-family: 'Material Icons' !important;
+	}
+}
 
 .hgroup {
 	* {padding-top: .5rem;}

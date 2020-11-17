@@ -287,6 +287,11 @@
 	width: auto;
 	max-width: 100%;
   }
+  .col-sm-0 {
+	-ms-flex: 0 0 0;
+	flex: 0 0 0;
+	max-width: 0;
+  }
   .col-sm-1 {
 	-ms-flex: 0 0 8.333333%;
 	flex: 0 0 8.333333%;
@@ -392,6 +397,11 @@
 	flex: 0 0 auto;
 	width: auto;
 	max-width: 100%;
+  }
+  .col-md-0 {
+	-ms-flex: 0 0 0;
+	flex: 0 0 0;
+	max-width: 0;
   }
   .col-md-1 {
 	-ms-flex: 0 0 8.333333%;
@@ -499,6 +509,11 @@
 	width: auto;
 	max-width: 100%;
   }
+  .col-lg-0 {
+	-ms-flex: 0 0 0;
+	flex: 0 0 0;
+	max-width: 0;
+  }
   .col-lg-1 {
 	-ms-flex: 0 0 8.333333%;
 	flex: 0 0 8.333333%;
@@ -605,6 +620,11 @@
 	width: auto;
 	max-width: 100%;
   }
+  .col-xl-0 {
+	-ms-flex: 0 0 0;
+	flex: 0 0 0;
+	max-width: 0;
+  }
   .col-xl-1 {
 	-ms-flex: 0 0 8.333333%;
 	flex: 0 0 8.333333%;
@@ -667,4 +687,29 @@
   }
 }
 
-/*# sourceMappingURL=bootstrap-grid.css.map */
+// Box hidden
+
+@media only screen and (max-width: 576px) {
+	.col-sm-hidden {
+		opacity: 0;
+		max-width: 0 !important;
+	}
+}
+@media only screen and (min-width: 577px) and (max-width: 768px) {
+	.col-md-hidden {
+		opacity: 0;
+		max-width: 0 !important;
+	}
+}
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+	.col-lg-hidden {
+		opacity: 0;
+		max-width: 0 !important;
+	}
+}
+@media only screen and (min-width: 993px) {
+	.col-xl-hidden {
+		opacity: 0;
+		max-width: 0 !important;
+	}
+}

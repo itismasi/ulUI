@@ -35,6 +35,9 @@ body {* {font-family: uloo;}}
 	text-align-last: center;
 }
 
+.text-direction-left {direction: ltr;}
+.text-direction-right {direction: rtl;}
+
 .text-nowrap {white-space: nowrap;}
 
 .text-weight-thin {font-weight: 100;}

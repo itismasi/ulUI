@@ -2,35 +2,38 @@
 .normal-center {
 	margin-left: auto;
 	margin-right: auto;
+}.hack-center {
+	@extend .normal-center;
+	display: table;
 }
 
-.normal-padding-zero {padding: 0;}
-.normal-margin-zero {margin: 0;}
+.normal-padding-zero {padding: 0 !important;}
+.normal-margin-zero {margin: 0 !important;}
 .normal-no-space {
 	@extend .normal-padding-zero;
 	@extend .normal-margin-zero;
 }
 
 .normal-padding-horizontal-light {
-	padding-top: .5rem;
-	padding-bottom: .5rem;
+	padding-top: $light-size;
+	padding-bottom: $light-size;
 }.normal-padding-horizontal-medium {
-	padding-top: 1.75rem;
-	padding-bottom: 1.75rem;
+	padding-top: $medium-size;
+	padding-bottom: $medium-size;
 }.normal-padding-horizontal-heavy {
-	padding-top: 4rem;
-	padding-bottom: 4rem;
+	padding-top: $large-size;
+	padding-bottom: $large-size;
 }
 
 .normal-padding-vertical-light {
-	padding-left: .5rem;
-	padding-right: .5rem;
+	padding-left: $light-size;
+	padding-right: $light-size;
 }.normal-padding-vertical-medium {
-	padding-left: 1.75rem;
-	padding-right: 1.75rem;
+	padding-left: $medium-size;
+	padding-right: $medium-size;
 }.normal-padding-vertical-heavy {
-	padding-left: 4rem;
-	padding-right: 4rem;
+	padding-left: $large-size;
+	padding-right: $large-size;
 }
 
 .normal-padding-all-light {
@@ -47,25 +50,25 @@
 
 
 .normal-margin-horizontal-light {
-	margin-top: .5rem;
-	margin-bottom: .5rem;
+	margin-top: $light-size;
+	margin-bottom: $light-size;
 }.normal-margin-horizontal-medium {
-	margin-top: 1.75rem;
-	margin-bottom: 1.75rem;
+	margin-top: $medium-size;
+	margin-bottom: $medium-size;
 }.normal-margin-horizontal-heavy {
-	margin-top: 4rem;
-	margin-bottom: 4rem;
+	margin-top: $large-size;
+	margin-bottom: $large-size;
 }
 
 .normal-margin-vertical-light {
-	margin-left: .5rem;
-	margin-right: .5rem;
+	margin-left: $light-size;
+	margin-right: $light-size;
 }.normal-margin-vertical-medium {
-	margin-left: 1.75rem;
-	margin-right: 1.75rem;
+	margin-left: $medium-size;
+	margin-right: $medium-size;
 }.normal-margin-vertical-heavy {
-	margin-left: 4rem;
-	margin-right: 4rem;
+	margin-left: $large-size;
+	margin-right: $large-size;
 }
 
 .normal-margin-all-light {
@@ -78,6 +81,18 @@
 	@extend .normal-margin-horizontal-heavy;
 	@extend .normal-margin-vertical-heavy;
 }
+
+.button-padding-light {
+	padding: $ultra-light-size $light-size;
+}.button-padding-medium {
+	padding: $light-size $medium-size;
+}.button-padding-large {
+	padding: $medium-size $large-size;
+}
+
+.block {display: block;}
+.inline {display: inline;}
+.inline-block {display: inline-block;}
 
 // ---> children
 .children-inline {
@@ -122,6 +137,16 @@
 	min-height: 100vh;
 }
 
+.max-height-quarter {max-height: 25vh;}
+.max-height-half {max-height: 50vh;}
+.max-height-most {max-height: 80vh;}
+.max-height-full {max-height: 100vh;}
+
+.max-width-quarter {max-width: 25vw;}
+.max-width-half {max-width: 50vw;}
+.max-width-most {max-width: 80vw;}
+.max-width-full {max-width: 100vw;}
+
 
 // ---> Overflows
 .overflow-vertical {overflow-x: auto;}
@@ -141,4 +166,10 @@
 }
 
 
-.width-light {width: 4rem;}
+.width-light {width: $large-size;}
+
+.position-static {position: static;}
+.position-relative {position: relative;}
+.position-absolute {position: absolute;}
+.position-fixed {position: fixed;}
+.position-sticky {position: sticky;}

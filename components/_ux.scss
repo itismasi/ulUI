@@ -1,7 +1,8 @@
 // ---> Borders
 .border-radius-light {border-radius: .25rem;}
 .border-radius-medium {border-radius: .5rem;}
-.border-radius-heavy {border-radius: 1rem;}
+.border-radius-large {border-radius: 1rem;}
+.border-radius-round {border-radius: 1000rem;}
 
 .border-radius-avatar {
 	border-radius: 100%;
@@ -12,22 +13,66 @@
 .border-size-medium {border-width: 2.5px;}
 .border-size-heavy {border-width: 5px;}
 
-.border-color-white {color: $grey_50;}
-.border-color-green {color: $green_700;}
-.border-color-red {color: $red_700;}
-.border-color-yellow {color: $yellow_700;}
-.border-color-pink {color: $pink_700;}
-.border-color-amber {color: $amber_700;}
-.border-color-blue {color: $blue_700;}
-.border-color-purple {color: $purple_700;}
-.border-color-brown {color: $brown_700;}
-.border-color-bgrey {color: $bgrey_700;}
-.border-color-purple {color: $purple_700;}
-.border-color-teal {color: $teal_700;}
-.border-color-cyan {color: $cyan_700;}
-.border-color-orange {color: $orange_700;}
+.border-bottom-only {
+	border-top: none;
+	border-right: none;
+	border-left: none;
+}.border-top-only {
+	border-bottom: none;
+	border-right: none;
+	border-left: none;
+}.border-left-only {
+	border-top: none;
+	border-bottom: none;
+	border-right: none;
+}.border-right-only {
+	border-top: none;
+	border-bottom: none;
+	border-left: none;
+}
 
-.border-none {border: none;}
+.border-color-white {border-color: $grey_50;}
+.border-color-black {border-color: $grey_900;}
+.border-color-green {border-color: $green_700;}
+.border-color-red {border-color: $red_700;}
+.border-color-yellow {border-color: $yellow_700;}
+.border-color-pink {border-color: $pink_700;}
+.border-color-amber {border-color: $amber_700;}
+.border-color-blue {border-color: $blue_700;}
+.border-color-purple {border-color: $purple_700;}
+.border-color-brown {border-color: $brown_700;}
+.border-color-bgrey {border-color: $bgrey_700;}
+.border-color-purple {border-color: $purple_700;}
+.border-color-teal {border-color: $teal_700;}
+.border-color-cyan {border-color: $cyan_700;}
+.border-color-orange {border-color: $orange_700;}
+
+.outline-none {outline: none;}
+
+.outline-solid {outline-style: solid;}
+.outline-size-light {outline-width: 1px;}
+.outline-size-medium {outline-width: 2.5px;}
+.outline-size-heavy {outline-width: 5px;}
+
+.outline-color-white {outline-color: $grey_50;}
+.outline-color-black {outline-color: $grey_900;}
+.outline-color-green {outline-color: $green_700;}
+.outline-color-red {outline-color: $red_700;}
+.outline-color-yellow {outline-color: $yellow_700;}
+.outline-color-pink {outline-color: $pink_700;}
+.outline-color-amber {outline-color: $amber_700;}
+.outline-color-blue {outline-color: $blue_700;}
+.outline-color-purple {outline-color: $purple_700;}
+.outline-color-brown {outline-color: $brown_700;}
+.outline-color-bgrey {outline-color: $bgrey_700;}
+.outline-color-purple {outline-color: $purple_700;}
+.outline-color-teal {outline-color: $teal_700;}
+.outline-color-cyan {outline-color: $cyan_700;}
+.outline-color-orange {outline-color: $orange_700;}
+
+.outline-none {outline: none;}
+
+.cursor-pointer {cursor: pointer;}
 
 // Shapes
 
@@ -66,7 +111,7 @@ hr.line {
 	@extend .shadow-soft-black;
 }
 
-.tile-parent {background-color: #fce4ec;}
+.tile-parent {background-color: $grey_100;}
 
 .material-icons {
 	font-family: 'Material Icons' !important;
@@ -80,4 +125,15 @@ hr.line {
 		 font-feature-settings: 'liga';
 	-webkit-font-feature-settings: 'liga';
 	-webkit-font-smoothing: antialiased;
+}
+
+.effect-hover-shadow-medium:hover {
+	@extend .shadow-medium-black;
+}
+
+
+.background-best-fit {
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
 }

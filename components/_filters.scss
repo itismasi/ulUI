@@ -11,3 +11,8 @@
 	@extend .transition;
 	transition-duration: .5s;
 }
+
+.filter-hue-zero {filter: hue-rotate(0deg);}
+.filter-hue-quarter {filter: hue-rotate(90deg);}
+.filter-hue-half {filter: hue-rotate(180deg);}
+.filter-hue-three-quarter {filter: hue-rotate(270deg);}

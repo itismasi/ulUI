@@ -3,9 +3,11 @@ body {
 }
 
 // body.vazir-default {* {font-family: fr_vazir;}}
-body {* {font-family: uloo;}}
+*, *::before, *::after {font-family: uloo;}
 
 .text-color-white {color: $grey_50;}
+.text-color-silver {color: $grey_500;}
+.text-color-grey {color: $grey_800;}
 .text-color-black {color: $grey_900;}
 .text-color-green {color: $green_700;}
 .text-color-red {color: $red_700;}
@@ -25,6 +27,11 @@ body {* {font-family: uloo;}}
 .text-size-normal {font-size: 1rem;}
 .text-size-medium {font-size: 1.3rem;}
 .text-size-big {font-size: 2rem;}
+
+.text-height-light {line-height: .8rem;}
+.text-height-normal {line-height: 1rem;}
+.text-height-medium {line-height: 1.3rem;}
+.text-height-big {line-height: 2rem;}
 
 .text-align-center {text-align: center;}
 .text-align-right {text-align: right;}

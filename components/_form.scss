@@ -1,8 +1,37 @@
 .form-normalize {
 	button {
-		@extend .button-padding-light;
-		background: $grey_50;
-		border: none;
+		@extend .button-padding-medium;
+
+		@extend .text-color-black;
+		@extend .text-weight-dark;
+		@extend .text-height-medium;
+		@extend .text-size-medium;
+	}
+
+	input[type=text], input[type=password], textarea {
+		@extend .normal-padding-all-light;
+
+		@extend .text-weight-bold;
+		@extend .text-height-normal;
+	}
+
+	input[type=text], input[type=password], textarea, button, select, option {
+		@extend .border-solid;
+		@extend .border-size-light;
+		@extend .border-radius-medium;
+		@extend .border-color-black;
+		
+		@extend .normal-margin-horizontal-light;
+		
+		@extend .background-color-white;
+		@extend .text-color-black;
+	}
+
+	select {
+		@extend .normal-padding-all-light;
+		option {
+			@extend .normal-padding-horizontal-medium;
+		}
 	}
 }
 
@@ -21,14 +50,54 @@
 
 		@extend .border-solid;
 		@extend .border-size-heavy;
-		@extend .border-color-black;
+		@extend .border-color-blue;
 
 		@extend .text-weight-bold;
 		@extend .text-align-center;
+		@extend .text-size-light;
+		@extend .text-color-blue;
 	}
 	input {display: none;}
 	input:checked + p {
-		@extend .background-color-black;
+		@extend .background-color-blue;
 		@extend .text-color-white;
+	}
+}
+
+.form-input-material {
+	@extend .full-width;
+	@extend .position-relative;
+
+	@extend .flex-column;
+	@extend .flex-both-center;
+
+	input {
+		@extend .full-width;
+		@extend .normal-padding-all-light;
+		
+		@extend .border-bottom-only;
+		@extend .border-solid;
+		border-color: $grey_300;
+		@extend .border-size-heavy;
+	}
+
+	label {
+		@extend .position-absolute;
+		@extend .position-stick-bottom;
+		left: 50%;
+		
+		@extend .width-zero;
+
+		@extend .border-bottom-only;
+		@extend .border-solid;
+		@extend .border-color-blue;
+		@extend .border-size-heavy;
+
+		@extend .transition-short;
+	}
+
+	input:focus + label, input:valid + label {
+		@extend .full-width;
+		@extend .position-stick-left;
 	}
 }

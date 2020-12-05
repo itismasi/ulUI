@@ -1,4 +1,7 @@
 // ---> Borders
+
+.border-none {border: none;}
+
 .border-radius-light {border-radius: .25rem;}
 .border-radius-medium {border-radius: .5rem;}
 .border-radius-large {border-radius: 1rem;}
@@ -111,6 +114,11 @@ hr.line {
 	@extend .shadow-soft-black;
 }
 
+.tile-full-height {
+	@extend .tile;
+	height: calc(100% - #{$light-size} * 2);
+}
+
 .tile-parent {background-color: $grey_100;}
 
 .material-icons {
@@ -136,4 +144,51 @@ hr.line {
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
+}
+
+.background-norepeat {background-repeat: no-repeat;}
+
+.background-position-top {background-position: top;}
+.background-position-bottom {background-position: bottom;}
+.background-position-left {background-position: left;}
+.background-position-right {background-position: right;}
+
+.background-size-cover {background-size: cover;}
+
+.loading-line {
+	position: relative;
+
+	@keyframes loading-line {
+		0% {
+			margin-right: 0%;
+			width: 0%;
+		} 50% {
+			margin-right: 0%;
+			width: 100%;
+		} 100% {
+			margin-right: 100%;
+			width: 0;
+		}
+	}
+	&::before {
+		@extend .pseudo;
+
+		height: $light-size;
+		@extend .background-color-red;
+		@extend .border-radius-round;
+
+		animation: loading-line 2s infinite;
+	}
+}
+
+.overlay {
+	@extend .position-fixed;
+	@extend .position-z-index-extra-large;
+	@extend .position-stick-top;
+
+	@extend .full-page-height;
+	@extend .width-inherit;
+	@extend .max-width-inherit;
+
+	background-color: rgba($grey_900, .9);
 }

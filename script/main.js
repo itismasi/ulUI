@@ -77,7 +77,6 @@ class hamburger {
 
 	action() {
 		this.position = -this.position;
-		console.log(this.valueExport());
 		this.classExport();
 		this.drawer.style.right = this.valueExport();
 	}
@@ -150,12 +149,34 @@ class scrollHelper {
 }
 
 class urlWorker {
+	urlDecoder(input, regex) {
+		return decodeURIComponent(input.replace(regex, " "));
+	}
+
+	getParametersList(url = window.location.search){
+		var match,
+        pl     = /\+/g,  // Regex for replacing addition symbol with a space
+        search = /([^&=]+)=?([^&]*)/g,
+        decode = function (s) { return decodeURIComponent(s.replace(pl, " ")); },
+		query  = url.substring(1);
+
+		let urlParams = {};
+		while (match = search.exec(query)) urlParams[this.urlDecoder(match[1], pl)] = this.urlDecoder(match[2], pl);
+		return urlParams;
+	}
+
 	getParameterByName(name, url = window.location.href) {
 		name = name.replace(/[\[\]]/g, '\\$&');
 		var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
 			results = regex.exec(url);
 		if (!results) return null;
 		if (!results[2]) return '';
-		return decodeURIComponent(results[2].replace(/\+/g, ' '));
+		return this.urlDecoder(results[2], /\+/g);
+	}
+
+	setUrl(params, title = document.title, state = "") {
+		history.pushState(state, title, params);
+		console.log("run");
+		document.title = title;
 	}
 }
